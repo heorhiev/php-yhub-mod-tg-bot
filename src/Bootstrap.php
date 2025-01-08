@@ -12,7 +12,7 @@ class Bootstrap implements BootstrapInterface
 {
     public function bootstrap($app): void
     {
-        Http::addRoute('anti-bot-handler', TelegramBotController::class);
-        AliasService::setPath('{@antiBotViews}', __DIR__ . '/views');
+        Http::addRoute('telegram-bot-handler', TelegramBotController::class);
+        AliasService::setPath('{@tgBotViews}', __DIR__ . '/views');
     }
 }

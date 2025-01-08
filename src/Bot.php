@@ -5,7 +5,7 @@ namespace yhub\module\telegram;
 use yhub\module\telegram\commands\StartCommand;
 
 
-class YHubTelegramBot extends \light\tg\bot\Bot
+class Bot extends \light\tg\bot\Bot
 {
     private static $_commands = [
         'start' => StartCommand::class,

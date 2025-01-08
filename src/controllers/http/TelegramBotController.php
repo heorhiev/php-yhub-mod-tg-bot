@@ -2,7 +2,7 @@
 
 namespace yhub\module\telegram\controllers\http;
 
-use yhub\module\telegram\YHubTelegramBot;
+use yhub\module\telegram\Bot;
 use light\http\ControllerInterface;
 
 
@@ -10,7 +10,7 @@ class TelegramBotController implements ControllerInterface
 {
     public function main(): void
     {
-        $bot = new YHubTelegramBot('telegram');
+        $bot = new Bot('bot/telegram');
         $bot->run();
     }
 }
