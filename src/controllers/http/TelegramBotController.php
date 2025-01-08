@@ -10,7 +10,6 @@ class TelegramBotController implements ControllerInterface
 {
     public function main(): void
     {
-        $bot = new Bot('bot/telegram');
-        $bot->run();
+        (new Bot('bot/telegram'))->run();
     }
 }
